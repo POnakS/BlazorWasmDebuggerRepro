@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.UseUrls("http://*:5264/");
+
+
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
